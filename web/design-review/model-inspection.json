@@ -1,0 +1,427 @@
+{
+  "date": "2026-10-26",
+  "model": {
+    "name": "VenusDrive generic educational chassis",
+    "license": "Original VenusDrive geometry",
+    "source": "Original parametric geometry; component roles described by the linked care sources",
+    "downloaded": false,
+    "modelSpecific": false
+  },
+  "externalDownloadInspected": false,
+  "layouts": {
+    "combustion": {
+      "meshCount": 29,
+      "triangles": 27520,
+      "components": {
+        "engine": {
+          "description": "Inline engine block, cylinder head and valve cover",
+          "available": true,
+          "meshNames": [
+            "Engine block",
+            "Cylinder head and valve cover"
+          ],
+          "triangles": 84
+        },
+        "oil-filter": {
+          "description": "Spin-on canister",
+          "available": true,
+          "meshNames": [
+            "Spin-on oil filter"
+          ],
+          "triangles": 96
+        },
+        "dipstick": {
+          "description": "Yellow loop and narrow tube",
+          "available": true,
+          "meshNames": [
+            "Dipstick loop and tube"
+          ],
+          "triangles": 480
+        },
+        "air-filter": {
+          "description": "Airbox and pleated filter insert",
+          "available": true,
+          "meshNames": [
+            "Airbox and filter insert",
+            "Pleated air filter"
+          ],
+          "triangles": 228
+        },
+        "battery": {
+          "description": "Low-voltage case, caps and terminals",
+          "available": true,
+          "meshNames": [
+            "Low-voltage battery",
+            "Battery terminals"
+          ],
+          "triangles": 204
+        },
+        "alternator": {
+          "description": "Vented housing, pulley and bracket",
+          "available": true,
+          "meshNames": [
+            "Alternator housing and vents"
+          ],
+          "triangles": 1664
+        },
+        "radiator": {
+          "description": "Finned radiator and upper hose",
+          "available": true,
+          "meshNames": [
+            "Radiator fins and tanks"
+          ],
+          "triangles": 372
+        },
+        "coolant-reservoir": {
+          "description": "Translucent expansion tank and pressure cap",
+          "available": true,
+          "meshNames": [
+            "Coolant expansion reservoir",
+            "Coolant expansion reservoir cap"
+          ],
+          "triangles": 108
+        },
+        "brake-fluid": {
+          "description": "Reservoir and master cylinder",
+          "available": true,
+          "meshNames": [
+            "Brake-fluid reservoir",
+            "Brake-fluid reservoir cap"
+          ],
+          "triangles": 108
+        },
+        "washer": {
+          "description": "Washer tank and blue cap",
+          "available": true,
+          "meshNames": [
+            "Washer reservoir",
+            "Washer reservoir cap"
+          ],
+          "triangles": 108
+        },
+        "belts": {
+          "description": "Accessory pulleys and belt loop",
+          "available": true,
+          "meshNames": [
+            "Accessory belt and pulleys"
+          ],
+          "triangles": 528
+        },
+        "brake-pads": {
+          "description": "Disc rotors, calipers and simplified pad blocks",
+          "available": true,
+          "meshNames": [
+            "Brake rotors",
+            "Brake calipers and pads"
+          ],
+          "triangles": 608
+        },
+        "tires": {
+          "description": "Four tires, rims and tread bands",
+          "available": true,
+          "meshNames": [
+            "Tires and treads",
+            "Wheel rims"
+          ],
+          "triangles": 8320
+        },
+        "suspension": {
+          "description": "Coil springs, dampers and control arms",
+          "available": true,
+          "meshNames": [
+            "Springs and control arms"
+          ],
+          "triangles": 13568
+        },
+        "transmission": {
+          "description": "Bellhousing and gearbox",
+          "available": true,
+          "meshNames": [
+            "Transmission and bellhousing"
+          ],
+          "triangles": 188
+        },
+        "catalyst": {
+          "description": "Exhaust pipe, converter and rear muffler",
+          "available": true,
+          "meshNames": [
+            "Exhaust converter, pipe and muffler"
+          ],
+          "triangles": 348
+        }
+      }
+    },
+    "hybrid": {
+      "meshCount": 29,
+      "triangles": 27520,
+      "components": {
+        "engine": {
+          "description": "Inline engine block, cylinder head and valve cover",
+          "available": true,
+          "meshNames": [
+            "Engine block",
+            "Cylinder head and valve cover"
+          ],
+          "triangles": 84
+        },
+        "oil-filter": {
+          "description": "Spin-on canister",
+          "available": true,
+          "meshNames": [
+            "Spin-on oil filter"
+          ],
+          "triangles": 96
+        },
+        "dipstick": {
+          "description": "Yellow loop and narrow tube",
+          "available": true,
+          "meshNames": [
+            "Dipstick loop and tube"
+          ],
+          "triangles": 480
+        },
+        "air-filter": {
+          "description": "Airbox and pleated filter insert",
+          "available": true,
+          "meshNames": [
+            "Airbox and filter insert",
+            "Pleated air filter"
+          ],
+          "triangles": 228
+        },
+        "battery": {
+          "description": "Low-voltage case, caps and terminals",
+          "available": true,
+          "meshNames": [
+            "Low-voltage battery",
+            "Battery terminals"
+          ],
+          "triangles": 204
+        },
+        "alternator": {
+          "description": "Vented housing, pulley and bracket",
+          "available": true,
+          "meshNames": [
+            "Alternator housing and vents"
+          ],
+          "triangles": 1664
+        },
+        "radiator": {
+          "description": "Finned radiator and upper hose",
+          "available": true,
+          "meshNames": [
+            "Radiator fins and tanks"
+          ],
+          "triangles": 372
+        },
+        "coolant-reservoir": {
+          "description": "Translucent expansion tank and pressure cap",
+          "available": true,
+          "meshNames": [
+            "Coolant expansion reservoir",
+            "Coolant expansion reservoir cap"
+          ],
+          "triangles": 108
+        },
+        "brake-fluid": {
+          "description": "Reservoir and master cylinder",
+          "available": true,
+          "meshNames": [
+            "Brake-fluid reservoir",
+            "Brake-fluid reservoir cap"
+          ],
+          "triangles": 108
+        },
+        "washer": {
+          "description": "Washer tank and blue cap",
+          "available": true,
+          "meshNames": [
+            "Washer reservoir",
+            "Washer reservoir cap"
+          ],
+          "triangles": 108
+        },
+        "belts": {
+          "description": "Accessory pulleys and belt loop",
+          "available": true,
+          "meshNames": [
+            "Accessory belt and pulleys"
+          ],
+          "triangles": 528
+        },
+        "brake-pads": {
+          "description": "Disc rotors, calipers and simplified pad blocks",
+          "available": true,
+          "meshNames": [
+            "Brake rotors",
+            "Brake calipers and pads"
+          ],
+          "triangles": 608
+        },
+        "tires": {
+          "description": "Four tires, rims and tread bands",
+          "available": true,
+          "meshNames": [
+            "Tires and treads",
+            "Wheel rims"
+          ],
+          "triangles": 8320
+        },
+        "suspension": {
+          "description": "Coil springs, dampers and control arms",
+          "available": true,
+          "meshNames": [
+            "Springs and control arms"
+          ],
+          "triangles": 13568
+        },
+        "transmission": {
+          "description": "Bellhousing and gearbox",
+          "available": true,
+          "meshNames": [
+            "Transmission and bellhousing"
+          ],
+          "triangles": 188
+        },
+        "catalyst": {
+          "description": "Exhaust pipe, converter and rear muffler",
+          "available": true,
+          "meshNames": [
+            "Exhaust converter, pipe and muffler"
+          ],
+          "triangles": 348
+        }
+      }
+    },
+    "electric": {
+      "meshCount": 19,
+      "triangles": 23904,
+      "components": {
+        "engine": {
+          "description": "Inline engine block, cylinder head and valve cover",
+          "available": false,
+          "meshNames": [],
+          "triangles": 0
+        },
+        "oil-filter": {
+          "description": "Spin-on canister",
+          "available": false,
+          "meshNames": [],
+          "triangles": 0
+        },
+        "dipstick": {
+          "description": "Yellow loop and narrow tube",
+          "available": false,
+          "meshNames": [],
+          "triangles": 0
+        },
+        "air-filter": {
+          "description": "Airbox and pleated filter insert",
+          "available": false,
+          "meshNames": [],
+          "triangles": 0
+        },
+        "battery": {
+          "description": "Low-voltage case, caps and terminals",
+          "available": true,
+          "meshNames": [
+            "Low-voltage battery",
+            "Battery terminals"
+          ],
+          "triangles": 204
+        },
+        "alternator": {
+          "description": "Vented housing, pulley and bracket",
+          "available": false,
+          "meshNames": [],
+          "triangles": 0
+        },
+        "radiator": {
+          "description": "Finned radiator and upper hose",
+          "available": true,
+          "meshNames": [
+            "Radiator fins and tanks"
+          ],
+          "triangles": 372
+        },
+        "coolant-reservoir": {
+          "description": "Translucent expansion tank and pressure cap",
+          "available": true,
+          "meshNames": [
+            "Coolant expansion reservoir",
+            "Coolant expansion reservoir cap"
+          ],
+          "triangles": 108
+        },
+        "brake-fluid": {
+          "description": "Reservoir and master cylinder",
+          "available": true,
+          "meshNames": [
+            "Brake-fluid reservoir",
+            "Brake-fluid reservoir cap"
+          ],
+          "triangles": 108
+        },
+        "washer": {
+          "description": "Washer tank and blue cap",
+          "available": true,
+          "meshNames": [
+            "Washer reservoir",
+            "Washer reservoir cap"
+          ],
+          "triangles": 108
+        },
+        "belts": {
+          "description": "Accessory pulleys and belt loop",
+          "available": false,
+          "meshNames": [],
+          "triangles": 0
+        },
+        "brake-pads": {
+          "description": "Disc rotors, calipers and simplified pad blocks",
+          "available": true,
+          "meshNames": [
+            "Brake rotors",
+            "Brake calipers and pads"
+          ],
+          "triangles": 608
+        },
+        "tires": {
+          "description": "Four tires, rims and tread bands",
+          "available": true,
+          "meshNames": [
+            "Tires and treads",
+            "Wheel rims"
+          ],
+          "triangles": 8320
+        },
+        "suspension": {
+          "description": "Coil springs, dampers and control arms",
+          "available": true,
+          "meshNames": [
+            "Springs and control arms"
+          ],
+          "triangles": 13568
+        },
+        "transmission": {
+          "description": "Bellhousing and gearbox",
+          "available": false,
+          "meshNames": [],
+          "triangles": 0
+        },
+        "catalyst": {
+          "description": "Exhaust pipe, converter and rear muffler",
+          "available": false,
+          "meshNames": [],
+          "triangles": 0
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Original approximate geometry, not a production vehicle or repair diagram.",
+    "Hybrid uses combustion geometry; hybrid-specific and high-voltage geometry is unavailable.",
+    "Electric filters remove combustion components; this is not a verified EV architecture.",
+    "Presence of triangles does not establish visual realism or engineering accuracy. Browser inspection remains required."
+  ]
+}

@@ -1,0 +1,46 @@
+✔ signup, verification and recovery use provider endpoints; logout clears the provider session (85.222667ms)
+✔ managed auth protocol only stores a session after provider response and validates user (0.966792ms)
+✔ auth and delivery errors are surfaced; a failed user check clears the candidate session (0.567834ms)
+✔ save RPC derives owner server-side and keeps revision on a rejected stale save (0.921333ms)
+✔ cross-account attachment paths are rejected without sending a request (0.675042ms)
+✔ catalog schema and dependent selectors preserve source data (94.706125ms)
+✔ parts aliases disambiguate batteries and locate every component (0.636667ms)
+✔ layout and guide links are complete (0.652333ms)
+✔ vehicle create, edit, switch and archive preserve records (43.867416ms)
+✔ mileage input and explicit lower-reading correction (86.831375ms)
+✔ calendar month clamping and either threshold (0.909709ms)
+✔ unknown and partial history are explicit (0.234416ms)
+✔ EV exclusion and configuration applicability (0.388625ms)
+✔ service add, edit, delete recalculates without rewriting history (0.629583ms)
+✔ multi-task visit counts cost once; currencies stay separate; duplicates rejected (2.537ms)
+✔ snooze suppresses notification, not due status or threshold (0.311208ms)
+✔ CSV escapes commas, quotes, and formula injection (0.699541ms)
+✔ landing preview uses core calculations and leaves its input unchanged (56.8255ms)
+✔ repeat preview service does not double count a visit (0.690125ms)
+✔ demo switching and mileage changes keep vehicle records separate (0.635083ms)
+✔ preview fixture is isolated and never reads or writes browser storage (1.288958ms)
+✔ explicit explorer links retain the selected component in compatible layouts (0.461042ms)
+✔ landing sections scroll in place and sample information is labeled (0.561333ms)
+✔ all existing app routes and service expansion remain wired (1.77025ms)
+✔ responsive rules retain focus and reduced-motion fallbacks (4.602458ms)
+✔ unmatched search clears the previous component; filters and layouts stay consistent (1.580292ms)
+✔ miles/km reminder values convert and repeated unchanged saves do not drift (0.507459ms)
+✔ global, vehicle and task preferences have explicit precedence (28.06325ms)
+✔ generated 3D geometry has actual triangles for all 16 declared component groups (96.328583ms)
+✔ electric layout removes combustion geometry and does not invent high-voltage geometry (33.549375ms)
+✔ 3D mesh picking and camera presets use real spatial data (1.237084ms)
+✔ mobile navigation controller hides closed links, traps open focus and restores it on Escape (5.370083ms)
+✔ local persistence survives a new store instance; demo is separate (6.733875ms)
+✔ simultaneous tabs cannot overwrite each other silently (0.656542ms)
+✔ failed browser save and malformed storage remain explicit (0.1935ms)
+✔ oversized and disallowed files rejected (0.327708ms)
+✔ unconfigured cloud cannot simulate auth success (0.311375ms)
+✔ attachment content signatures are checked (2.142083ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 335.094375

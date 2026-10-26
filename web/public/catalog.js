@@ -1,0 +1,3 @@
+let pending;
+export async function catalog(){if(!pending)pending=fetch('/data/catalog.json').then(r=>{if(!r.ok)throw Error('Vehicle catalog unavailable. Manual entry still works.');return r.json();}).then(rows=>{if(!Array.isArray(rows)||!rows.every(r=>r.catalog_id&&r.make&&Number.isInteger(r.year)&&r.model&&r.source_url&&r.retrieved))throw Error('Vehicle catalog is invalid. Use manual entry.');return rows;}).catch(e=>{pending=null;throw e;});return pending;}
+export function choices(rows,make,year){return {makes:[...new Set(rows.map(x=>x.make))].sort(),years:[...new Set(rows.filter(x=>x.make===make).map(x=>x.year))].sort((a,b)=>b-a),models:rows.filter(x=>x.make===make&&x.year===Number(year)).sort((a,b)=>a.model.localeCompare(b.model))};}

@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {LocalStore,Backend,configured,validateAttachment,validateFileBytes} from '../public/persistence.js';
+import {blank} from '../public/core.js';
+const memory=()=>{const m=new Map();return {getItem:k=>m.get(k)??null,setItem:(k,v)=>m.set(k,v)};};
+test('local persistence survives a new store instance; demo is separate',async()=>{const storage=memory(),a=new LocalStore('local',storage);let s=await a.load();s.preferences.advanceDays=12;await a.save(s);assert.equal((await new LocalStore('local',storage).load()).preferences.advanceDays,12);const demo=await new LocalStore('demo',storage).load();assert.equal(demo.vehicles.length,1);assert.equal((await a.load()).vehicles.length,0);});
+test('simultaneous tabs cannot overwrite each other silently',async()=>{const storage=memory(),a=new LocalStore('local',storage),b=new LocalStore('local',storage);await a.load();await b.load();await a.save(blank());await assert.rejects(b.save({...blank(),selectedVehicleId:'other'}),/Another tab/);});
+test('failed browser save and malformed storage remain explicit',async()=>{const store=new LocalStore('local',{getItem:()=>null,setItem:()=>{throw Error('Quota exceeded');}});await store.load();await assert.rejects(store.save(blank()),/Quota/);const bad=new LocalStore('local',{getItem:()=>'{bad'});await assert.rejects(bad.load(),/not been overwritten/);});
+test('oversized and disallowed files rejected',()=>{assert.throws(()=>validateAttachment({type:'text/html',size:50}));assert.throws(()=>validateAttachment({type:'image/jpeg',size:1000001}));validateAttachment({type:'application/pdf',size:1000});});
+test('unconfigured cloud cannot simulate auth success',async()=>{assert.equal(configured(),false);await assert.rejects(new Backend().signIn('x@example.com','password'),/not configured/);});
+test('attachment content signatures are checked',async()=>{await assert.rejects(validateFileBytes(new File(['<html>bad</html>'],'fake.png',{type:'image/png'})),/does not match/);await validateFileBytes(new File(['%PDF-1.7 test'],'receipt.pdf',{type:'application/pdf'}));});

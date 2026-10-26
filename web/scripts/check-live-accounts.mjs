@@ -1,0 +1,16 @@
+// Read-only live checks. Never prints tokens or mutates/deletes existing records.
+// Run only after connecting your own test project and test accounts.
+const url=process.env.SUPABASE_URL,key=process.env.SUPABASE_PUBLISHABLE_KEY||process.env.SUPABASE_ANON_KEY;
+const tokens=[process.env.VENUSDRIVE_TEST_TOKEN_A,process.env.VENUSDRIVE_TEST_TOKEN_B];
+if(!url||!key||tokens.some(x=>!x))throw Error('Set SUPABASE_URL, public key, and two real test-account access tokens in your local environment. No checks ran.');
+const request=(path,token)=>fetch(url+path,{headers:{apikey:key,Authorization:'Bearer '+token}});
+const users=[];for(const token of tokens){const response=await request('/auth/v1/user',token);if(!response.ok)throw Error('A test token is invalid.');users.push(await response.json());}
+if(users[0].id===users[1].id)throw Error('Use two different test accounts.');
+let checks=0;
+for(let i=0;i<2;i++){
+ const own=await request('/rest/v1/account_data?select=user_id,version,payload',tokens[i]);if(!own.ok)throw Error('Account data read failed. Apply the migration and check grants.');const rows=await own.json();if(rows.length!==1)throw Error('Save a vehicle and service in each test account first; empty rows cannot establish isolation or persistence.');if(rows.some(r=>r.user_id!==users[i].id))throw Error('FAIL: account read exposed another owner.');checks++;
+ const cross=await request('/rest/v1/account_data?select=user_id&user_id=eq.'+users[1-i].id,tokens[i]);if(!cross.ok)throw Error('Cross-owner row check could not run.');if((await cross.json()).length)throw Error('FAIL: cross-owner row visible.');checks++;
+ const object=process.env[i===0?'VENUSDRIVE_TEST_ATTACHMENT_B':'VENUSDRIVE_TEST_ATTACHMENT_A'];if(object){if(!object.startsWith(users[1-i].id+'/'))throw Error('Test attachment does not belong to the other test account.');const ownerFile=await request('/storage/v1/object/authenticated/receipts/'+object,tokens[1-i]);if(!ownerFile.ok)throw Error('The owner must be able to read the existing test attachment before isolation can be checked.');const file=await request('/storage/v1/object/authenticated/receipts/'+object,tokens[i]);if(file.ok)throw Error('FAIL: cross-owner file accessible.');if(![400,401,403,404].includes(file.status))throw Error('File isolation check inconclusive.');checks++;}
+}
+if(process.env.VENUSDRIVE_TEST_TOKEN_A_SECOND_SESSION){const other=await request('/auth/v1/user',process.env.VENUSDRIVE_TEST_TOKEN_A_SECOND_SESSION);if(!other.ok||(await other.json()).id!==users[0].id)throw Error('Second session does not belong to account A.');const p='/rest/v1/account_data?select=version,payload';const [one,two]=await Promise.all([request(p,tokens[0]),request(p,process.env.VENUSDRIVE_TEST_TOKEN_A_SECOND_SESSION)]);if(!one.ok||!two.ok||JSON.stringify(await one.json())!==JSON.stringify(await two.json()))throw Error('Saved account snapshots differ across sessions.');checks++;}
+console.log(JSON.stringify({checks,mode:'Live read-only checks completed',limitations:'Attachment checks require existing test paths. Signup/delivery, write-denial, stale writes and successful browser saves require the documented acceptance test. No records were modified.'},null,2));

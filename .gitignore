@@ -1,0 +1,19 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/
+__pycache__/
+*.pyc
+*.log
+
+# Original input/reference files and research outputs stay local.
+/*.png
+/*.zip
+/VenusDrive_brand_year_models.txt
+/outputs/
+
+# Rebuildable offline review copies contain the same catalog/source again.
+/web/design-review/VenusDrive-offline-review.html
+/web/design-review/review-bundle.js
+/web/brand-review.png

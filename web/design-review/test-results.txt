@@ -1,0 +1,34 @@
+✔ catalog schema and dependent selectors preserve source data (39.554584ms)
+✔ parts aliases disambiguate batteries and locate every component (0.32975ms)
+✔ layout and guide links are complete (0.385458ms)
+✔ vehicle create, edit, switch and archive preserve records (13.172084ms)
+✔ mileage input and explicit lower-reading correction (39.750166ms)
+✔ calendar month clamping and either threshold (0.242083ms)
+✔ unknown and partial history are explicit (0.076667ms)
+✔ EV exclusion and configuration applicability (0.112875ms)
+✔ service add, edit, delete recalculates without rewriting history (0.306166ms)
+✔ multi-task visit counts cost once; currencies stay separate; duplicates rejected (0.771125ms)
+✔ snooze suppresses notification, not due status or threshold (0.582917ms)
+✔ CSV escapes commas, quotes, and formula injection (0.301292ms)
+✔ landing preview uses core calculations and leaves its input unchanged (41.061209ms)
+✔ repeat preview service does not double count a visit (0.253ms)
+✔ demo switching and mileage changes keep vehicle records separate (0.447875ms)
+✔ preview fixture is isolated and never reads or writes browser storage (0.352583ms)
+✔ explicit explorer links retain the selected component in compatible layouts (0.148666ms)
+✔ landing sections scroll in place and sample information is labeled (0.287084ms)
+✔ all existing app routes and service expansion remain wired (0.482292ms)
+✔ responsive rules retain focus and reduced-motion fallbacks (0.204958ms)
+✔ local persistence survives a new store instance; demo is separate (10.630209ms)
+✔ simultaneous tabs cannot overwrite each other silently (0.3015ms)
+✔ failed browser save and malformed storage remain explicit (0.137958ms)
+✔ oversized and disallowed files rejected (0.110875ms)
+✔ unconfigured cloud cannot simulate auth success (0.485167ms)
+✔ attachment content signatures are checked (2.450875ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 129.51875
