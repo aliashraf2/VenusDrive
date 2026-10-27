@@ -17,3 +17,6 @@ __pycache__/
 /web/design-review/VenusDrive-offline-review.html
 /web/design-review/review-bundle.js
 /web/brand-review.png
+
+# Generated high-resolution originals; optimized assets live in public.
+/web/design-review/studio-originals/

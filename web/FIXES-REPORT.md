@@ -1,4 +1,4 @@
-# VenusDrive implementation fixes — 26 October 2026
+# VenusDrive implementation fixes — 27 October 2026
 
 ## Implemented
 
@@ -10,6 +10,19 @@
 - Add vehicle appears beside the vehicle switcher and in dashboard actions. Update mileage, Record service, switching and the no-vehicle flow remain available.
 - Public DESIGN STUDY labels and logo-review links were removed. Backend setup belongs in project documentation; local-storage/account-availability notices remain. Repeated cartoon cars were replaced by precise mileage instruments and a component summary. One original, labeled generic concept illustration remains on the landing page. The approved VD asset files, bright Swiss styling and catalog were retained.
 - Supabase connection can be supplied via server public environment variables or static runtime configuration. Privileged keys are rejected by the server's public-config response. Added verification resend UI, provider-request handling tests, candidate-session cleanup, refresh deduplication and client attachment-path validation. Existing owner RLS, revision-checked RPC and private receipts policies remain intact. Client checks do not establish server-side isolation.
+
+## Bright studio redesign
+
+- Reworked the public landing page around the supplied white studio reference and the second mockup's content sequence. Kept VenusDrive name, VD mark, existing signup/signin links, app router, local/cloud state and catalog intact. The landing page is one scrolling experience with keyboard-accessible navigation, feature labels, process steps, an explainer section, interactive demo preview, garage CTA and working About/Contact/Privacy/Terms destinations.
+- Applied a consistent light theme to the existing workspace as well as landing/auth/info pages. Primary actions are graphite with white labels, links/focus are blue, and maintenance status colors remain labeled. The interface uses neutral surfaces and no green/teal brand accents.
+- Added generated, optimized, unbranded silver-sedan studio views and a daylight garage image. They are generic illustrations, not exact saved vehicles. The landing tour is a **three-angle image tour**, not real-time 3D; its draggable/keyboard angle switching, approximate visible-component markers, selection text, accessible part buttons, reset, and close behavior are implemented in `studio-tour.js`. It does not expose hidden component geometry. The existing app's separate approximate educational WebGL explorer remains available.
+- Added a separate demo preview with sample vehicles, interval status, service records, reminders, spending, unit display, mileage, service entry, snoozing, and reset. These changes live only in memory and do not modify local/cloud records.
+- New verified accounts with no active vehicle now land on My Garage after session restore; returning account sessions with a vehicle remain on their dashboard. Email/push delivery and authentication remain dependent on the user's Supabase configuration.
+- Source/art provenance and limitations are in `public/assets/studio/README.md`. The supplied mockups remain in the repository for reference. No production publish, domain/DNS work, paid asset, account activation, or data deletion occurred.
+
+### Redesign validation status
+
+The redesign's prior regression run passed 38 JavaScript tests, 67 static checks, two Python public-config tests, and JavaScript syntax checks. Four additional source tests were authored for the studio tour, preview isolation and new-account routing, but could not be executed after the latest edits in this resumed environment: neither `node` nor `npm` is installed or reachable on `PATH`. `git diff --check` passes and the two Python server configuration tests pass. The earlier JavaScript run is reported as a prior result, not a fresh run on the final tree. The environment also denied the local preview server bind; Safari opened an “Open” local-file confirmation panel instead of rendering the offline page. No rendered desktop/mobile screenshots or browser workflow results were captured in this resumed session.
 
 ## Checks performed
 
