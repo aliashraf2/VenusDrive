@@ -1,0 +1,13 @@
+{
+  "public/core.js": "928c7a60e257368a44b04ed3fd60c9af105750a1c257f0e7fdbcb5e2bc3f23b9",
+  "public/persistence.js": "02d2edf1a53ab1c6f4f6e71b3ba87ea326ccbd17481d0e49aac77a3740f96d20",
+  "public/reminder-preferences.js": "89c1775400acd451702651b2011c9775fa9b51b52e15d8fbb9dad396827f706f",
+  "public/catalog.js": "f1609d0b82011877923a71608d8e0591471e74751cbf6c1921ee2c8a41532040",
+  "public/data/catalog.json": "e145d0f15edb76147cf213ba01df6ffe288b02f6b88a83f458577b965da94791",
+  "public/assets/vd.svg": "43bf7858df1bce89afda43135acb1505739c17344a15e11a7f096107cdc34c06",
+  "public/assets/vd-white.svg": "54397ae25e4c01d115e406ec267173cf693418eb014b05b36aa595aa68f8c827",
+  "public/assets/favicon.svg": "91e40b60a2bf140021afd46feeae0c40b68fa9d8173c96bbbea44a92fcdab2d0",
+  "public/config.js": "d198591bff8162a640a3397e44a5e471c9b0448f9149b672f43b2a0a449ca814",
+  "supabase/migrations/001_initial.sql": "3064df1d419aa0239a4260f13bf24e61b75f1dceb43b713362b49478891a29fb",
+  "supabase/functions/delete-account/index.ts": "15d2e93be7d9067ae87a342d57dae1f9afab877f6a7cad511cb797776b459590"
+}

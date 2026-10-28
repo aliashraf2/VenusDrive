@@ -1,0 +1,10 @@
+{
+  "name": "exterior-lights",
+  "source": "/Users/aliashraf/.codex/generated_images/01a17ff3-144b-7e52-a737-6d7dd66d3986/exec-6e8fa685-786b-4be3-be8e-42788a6e878b.png",
+  "prompt": "Use case: scientific-educational. Asset type: individual VenusDrive automotive learning image. Subject: A coherent pair of realistic automotive exterior lighting assemblies, one clear-lens front headlight and one red rear taillight, distinct separate objects arranged neatly. Realistic precision product illustration with recognizable automotive materials and plausible physical details. White seamless studio background, soft diffuse lighting, subtle contact shadow, centered complete object with generous margins. Square composition, useful three-quarter viewing angle. Consistent calm premium catalog aesthetic. No text, no lettering, no watermark, no branding, no interface, no collage, no unrelated components. Representative generic example rather than exact vehicle part.",
+  "tool": "built-in image_gen",
+  "dimensions": [
+    1024,
+    1024
+  ]
+}

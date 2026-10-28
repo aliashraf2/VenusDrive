@@ -1,0 +1,34 @@
+{
+  "checks": 147,
+  "contrast": [
+    {
+      "role": "Graphite on white",
+      "ratio": 15.43
+    },
+    {
+      "role": "Secondary text on cool gray",
+      "ratio": 5.8
+    },
+    {
+      "role": "Black primary action",
+      "ratio": 17.79
+    },
+    {
+      "role": "Neutral status",
+      "ratio": 6.72
+    },
+    {
+      "role": "Blue links",
+      "ratio": 5.84
+    },
+    {
+      "role": "Overdue badge",
+      "ratio": 6.3
+    },
+    {
+      "role": "Due soon badge",
+      "ratio": 6.69
+    }
+  ],
+  "limits": "Static source and mathematical contrast checks only. No browser or live Supabase test."
+}

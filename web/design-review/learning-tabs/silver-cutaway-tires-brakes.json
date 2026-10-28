@@ -1,0 +1,15 @@
+{
+  "name": "silver-cutaway-tires-brakes",
+  "source": "/Users/aliashraf/.codex/generated_images/01a17ff3-144b-7e52-a737-6d7dd66d3986/exec-ce401b6e-a0db-4acd-827b-23de930326fc.png",
+  "prompts": [
+    "Change only the selected-system color treatment in this exact static cutaway. Preserve the entire silver sedan, precise position, camera, crop, scale, margins, body panels, engine-bay geometry, white background, lighting and shadow. Remove blue from the engine and oil filter, returning those parts to realistic neutral aluminum/black materials. Selected system is TIRES AND BRAKES: show a restrained electric-blue highlight on the tread/sidewall edges of both visible tires and on the visible brake disc/caliper assembly at the front wheel. Preserve black rubber texture and metal detail so the tires still look like tires, not solid blue plastic. Keep alloy wheel rims and suspension neutral. Make the rear tire selection visible as well. No other part should be blue. No text, printing, labels, arrows, icons, or UI. Do not change the illustration's geometry or framing. Static landscape 3:2 high-resolution asset."
+  ],
+  "reference": "/Users/aliashraf/.codex/generated_images/01a17ff3-144b-7e52-a737-6d7dd66d3986/exec-7726efab-a885-4ef9-bbd7-2f4f68db1c07.png",
+  "tool": "built-in image_gen",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "target": "public/assets/studio/silver-cutaway-tires-brakes.webp",
+  "bytes": 185006
+}

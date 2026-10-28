@@ -1,3 +1,5 @@
+> Current implementation: [Static explorer delivery](STATIC-EXPLORER-DELIVERY.md). The older WebGL/model requirements and earlier check counts below are historical and superseded by that report.
+
 # VenusDrive continuation
 
 Current implementation and verification are in `FIXES-REPORT.md` (26 October 2026). This update modifies the actual site in `public/`; it is not just a saved prompt.

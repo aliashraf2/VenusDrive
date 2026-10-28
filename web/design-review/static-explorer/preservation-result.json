@@ -1,0 +1,13 @@
+{
+  "public/core.js": true,
+  "public/persistence.js": true,
+  "public/reminder-preferences.js": true,
+  "public/catalog.js": true,
+  "public/data/catalog.json": true,
+  "public/assets/vd.svg": true,
+  "public/assets/vd-white.svg": true,
+  "public/assets/favicon.svg": true,
+  "public/config.js": true,
+  "supabase/migrations/001_initial.sql": true,
+  "supabase/functions/delete-account/index.ts": true
+}

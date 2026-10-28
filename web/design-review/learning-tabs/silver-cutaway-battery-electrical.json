@@ -1,0 +1,17 @@
+{
+  "name": "silver-cutaway-battery-electrical",
+  "source": "/Users/aliashraf/.codex/generated_images/01a17ff3-144b-7e52-a737-6d7dd66d3986/exec-bfc470df-aa2f-4442-bbaf-2c1254519b9a.png",
+  "prompts": [
+    "Change only the selected-system color treatment in this exact static cutaway. Preserve the entire silver sedan, precise position, camera, crop, scale, margins, body panels, engine-bay geometry, white background, lighting and shadow. Remove blue from the engine and oil filter, returning those parts to realistic neutral aluminum/black materials. Selected system is BATTERY AND ELECTRICAL: highlight the existing low-voltage rectangular battery in the upper-right engine compartment, the existing visible alternator housing beside the front of the engine, and a few existing connecting electrical wires in restrained electric blue. Keep the red positive-terminal cap red and preserve fine realistic material detail. Do not invent a traction battery, orange high-voltage system, extra parts or new wiring routes. All tires, brakes, engine and unrelated body surfaces remain neutral. No text, printing, labels, arrows, icons, or UI. Do not change geometry or framing. Static landscape 3:2 high-resolution asset.",
+    "Precise color-only correction to this exact image. The selected system is the low-voltage battery and electrical system. Recolor the BLACK PLASTIC CASE OF THE BATTERY itself to the same restrained electric blue as the highlighted alternator and wires. The battery is the rectangular black box with the RED positive terminal cap near the upper-right corner of the exposed engine bay, just below the windshield and above/right of the black air-filter box. Its lid and case should visibly read blue so a beginner immediately sees the battery selection; leave the red terminal cap red. Do not merely color cables or brackets. Preserve every other pixel as closely as possible: same complete silver sedan, framing, margins, viewpoint, shadow, white background, neutral engine and oil filter, black tires and existing blue alternator/wire treatment. No text, arrows, UI or labels."
+  ],
+  "reference": "/Users/aliashraf/.codex/generated_images/01a17ff3-144b-7e52-a737-6d7dd66d3986/exec-7726efab-a885-4ef9-bbd7-2f4f68db1c07.png",
+  "tool": "built-in image_gen",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "target": "public/assets/studio/silver-cutaway-battery-electrical.webp",
+  "bytes": 171778,
+  "revisedSource": "/Users/aliashraf/.codex/generated_images/01a17ff3-144b-7e52-a737-6d7dd66d3986/exec-8ce729d0-f5da-4609-ba1d-fa10af46955c.png"
+}

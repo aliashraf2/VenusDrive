@@ -1,3 +1,5 @@
+> Current implementation: [Static explorer delivery](STATIC-EXPLORER-DELIVERY.md). The older WebGL/model requirements and earlier check counts below are historical and superseded by that report.
+
 # Explorer asset evaluation — 26 October 2026
 
 ## Decision and incomplete requirement

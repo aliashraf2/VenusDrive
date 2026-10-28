@@ -1,3 +1,5 @@
+> Current implementation: [Static explorer delivery](STATIC-EXPLORER-DELIVERY.md). The older WebGL/model requirements and earlier check counts below are historical and superseded by that report.
+
 # Website stage delivery
 
 The source is in `web/public/`. Start it with `python3 server.py` from `web/`, then open `http://localhost:4173`. It is not published.

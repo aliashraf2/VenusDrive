@@ -1,8 +1,8 @@
 # VenusDrive website
 
-Implementation fixes and remaining blockers are recorded in `FIXES-REPORT.md`; account connection steps are in `ACCOUNT-CONNECTION.md`, and model evaluation/coverage is in `ASSET-RESEARCH.md`.
+Current delivery and verification limits are in [`STATIC-EXPLORER-DELIVERY.md`](STATIC-EXPLORER-DELIVERY.md). Account connection steps are in `ACCOUNT-CONNECTION.md`. Older redesign/model records are historical.
 
-The current visual system is the Swiss / International upgrade documented in `DESIGN-UPGRADE.md`. The actual public site remains in `public/`; `design-review/VenusDrive-offline-review.html` is an optional self-contained review aid with separate review-only storage and no cloud connection.
+The current visual system is a bright showroom landing page and static image-based learning interface, built on the existing light theme. The hero uses a compact 40/60 split with left-aligned text and a full-vehicle silver sedan image; mobile stacks text, buttons and car. The learning section uses selectable icon tabs and three matching static cutaways, with a blue button leading to the selected category. The actual public site remains in `public/`; `design-review/VenusDrive-offline-review.html` is an optional self-contained review aid with separate review-only storage and no cloud connection.
 
 Responsive website first. Android is a later client, not delivered by this website. Nothing has been published and no domain/DNS settings have been changed.
 
@@ -20,7 +20,7 @@ This task environment denied binding the local server socket. Run the command in
 - User-defined and general intervals with optional time and mileage thresholds. No bundled manufacturer schedules. Unknown baselines remain unknown. Equipment-dependent tasks need confirmation; EVs exclude combustion oil, intake-filter, spark-plug and timing-belt tasks.
 - Service visit creation, editing, deletion, multiple completed tasks, DIY/mechanic, shop, parts notes, total and optional itemized costs, private cloud or browser-local receipt attachments.
 - Dashboard, due explanations, actual spending, currency separation, expense grouping/filters, reminder preferences, snoozing and CSV/data export.
-- 27 introductory components across 17 systems, eight guides, source links and alias search. The lazy-loaded WebGL explorer has original approximate 3D geometry for 16 component groups, orbit/zoom/reset, mesh selection/highlighting, camera presets, hide/transparent body controls and a lightweight text/2D fallback. A realistic downloaded mechanical model is still outstanding; see `ASSET-RESEARCH.md`.
+- 27 introductory components in five explorer categories, eight guides, source links and alias search. The static image explorer has 28 separate component images, matching thumbnails, five educational sections, image failure/retry, search plus category filtering, and a dedicated mobile detail view with Back. There is no rotatable model or geometry requirement.
 - Managed account client: sign-up, sign-in, verification callback, recovery, password update, sign-out, optimistic revision checks, account export and account-deletion function. These require Supabase configuration and have not been live-tested.
 
 ## Important limitations
@@ -37,7 +37,7 @@ This task environment denied binding the local server socket. Run the command in
 
 ## Structure
 
-`public/config.js` owns name, tagline, domain, logo and public backend settings. `style.css` owns design tokens and typography. `core.js` is dependency-free maintenance/service/expense logic for reuse by a later Android client or shared-package wrapper. `persistence.js` separates local and Supabase adapters. `catalog.js` provides the replaceable catalog interface. `content.js` owns educational content; `locations.js` owns illustration mappings; `explorer.js` is loaded only on its route. `app.js` composes the UI. Supabase migration and account-deletion function live under `supabase/`.
+`public/config.js` owns name, tagline, domain, logo and public backend settings. `style.css` owns design tokens and typography. `core.js` is dependency-free maintenance/service/expense logic for reuse by a later Android client or shared-package wrapper. `persistence.js` separates local and Supabase adapters. `catalog.js` provides the replaceable catalog interface. `content.js` owns educational content; `component-data.js` owns category and image metadata; `component-detail.js` renders shared detail content; `explorer.js` is loaded only on its route. `app.js` composes the UI. Supabase migration and account-deletion function live under `supabase/`.
 
 The initial backend uses one versioned JSON document per user to keep cross-feature updates atomic without complex infrastructure. Other users cannot select that document through RLS, and writes derive the owner from the authenticated token. This is a first-version contract, not a large-fleet analytics schema. Normalize into vehicle/service tables with a migration when document size, concurrent editing or reporting warrants it, retaining record IDs and original history.
 
@@ -63,7 +63,7 @@ RockAuto research remains in the parent project. Its reuse permission and sample
 
 ## Assets and branding
 
-`assets/vd.svg`, `vd-white.svg` and `favicon.svg` are original scalable recreations from your supplied monogram reference. They are not the whole presentation board or a claim of exact tracing. Open `/logo-review.html` for review. The remaining landing concept illustration and fallback are original SVG; the 3D chassis uses original parametric triangles. No external model was downloaded/inspected or integrated. See `ASSET-RESEARCH.md` for candidates, coverage and limitations. Public navigation no longer links to the logo review. Typography uses system fonts. No CDN JavaScript or separately billed API is used.
+`assets/vd.svg`, `vd-white.svg` and `favicon.svg` are original scalable recreations from your supplied monogram reference. They are not the whole presentation board or a claim of exact tracing. Open `/logo-review.html` for review. Showroom and component images are original generated assets, with provenance and prompt records in their asset README files and `design-review/static-explorer/image-generation/`. A separate static cutaway supports the learning section. Legacy geometry was removed; no external 3D model is required or integrated. Public navigation no longer links to the logo review. Typography uses system fonts. No CDN JavaScript or separately billed API is used.
 
 ## Deployment and venusdrive.com — pending
 

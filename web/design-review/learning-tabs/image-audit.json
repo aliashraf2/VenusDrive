@@ -1,0 +1,370 @@
+{
+  "mainImages": 28,
+  "thumbnails": 27,
+  "cutawayImages": 1,
+  "learningSystemImages": 3,
+  "heroCutouts": 1,
+  "files": [
+    {
+      "file": "public/assets/components/air-conditioning.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 114398
+    },
+    {
+      "file": "public/assets/components/alternator.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 133300
+    },
+    {
+      "file": "public/assets/components/brake-fluid-reservoir.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 71302
+    },
+    {
+      "file": "public/assets/components/brake-pads.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 118772
+    },
+    {
+      "file": "public/assets/components/cabin-air-filter.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 99752
+    },
+    {
+      "file": "public/assets/components/catalytic-converter.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 71622
+    },
+    {
+      "file": "public/assets/components/coolant-expansion-reservoir.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 42458
+    },
+    {
+      "file": "public/assets/components/differential.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 91194
+    },
+    {
+      "file": "public/assets/components/drive-belts-and-hoses.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 167536
+    },
+    {
+      "file": "public/assets/components/electric-drive-unit.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 125038
+    },
+    {
+      "file": "public/assets/components/engine-air-filter.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 66556
+    },
+    {
+      "file": "public/assets/components/engine-oil-dipstick.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 15666
+    },
+    {
+      "file": "public/assets/components/engine.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 122702
+    },
+    {
+      "file": "public/assets/components/exterior-lights.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 144894
+    },
+    {
+      "file": "public/assets/components/fuel-system.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 70474
+    },
+    {
+      "file": "public/assets/components/high-voltage-traction-battery.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 59506
+    },
+    {
+      "file": "public/assets/components/low-voltage-battery.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 51552
+    },
+    {
+      "file": "public/assets/components/oil-filter.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 50912
+    },
+    {
+      "file": "public/assets/components/radiator.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 165116
+    },
+    {
+      "file": "public/assets/components/spark-plugs.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 77288
+    },
+    {
+      "file": "public/assets/components/steering-system.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 35514
+    },
+    {
+      "file": "public/assets/components/suspension.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 58438
+    },
+    {
+      "file": "public/assets/components/timing-belt.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 126494
+    },
+    {
+      "file": "public/assets/components/transfer-case.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 103224
+    },
+    {
+      "file": "public/assets/components/transmission.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 81444
+    },
+    {
+      "file": "public/assets/components/washer-reservoir.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 22324
+    },
+    {
+      "file": "public/assets/components/wheels-and-tires.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 90114
+    },
+    {
+      "file": "public/assets/components/wiper-blades.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 41060
+    },
+    {
+      "file": "public/assets/components/thumbs/air-conditioning.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 6038
+    },
+    {
+      "file": "public/assets/components/thumbs/alternator.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 7576
+    },
+    {
+      "file": "public/assets/components/thumbs/brake-fluid-reservoir.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 3810
+    },
+    {
+      "file": "public/assets/components/thumbs/brake-pads.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 3914
+    },
+    {
+      "file": "public/assets/components/thumbs/cabin-air-filter.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 5570
+    },
+    {
+      "file": "public/assets/components/thumbs/catalytic-converter.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 3762
+    },
+    {
+      "file": "public/assets/components/thumbs/coolant-expansion-reservoir.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 3148
+    },
+    {
+      "file": "public/assets/components/thumbs/differential.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 5252
+    },
+    {
+      "file": "public/assets/components/thumbs/drive-belts-and-hoses.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 9666
+    },
+    {
+      "file": "public/assets/components/thumbs/electric-drive-unit.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 7448
+    },
+    {
+      "file": "public/assets/components/thumbs/engine-air-filter.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 4196
+    },
+    {
+      "file": "public/assets/components/thumbs/engine-oil-dipstick.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 1416
+    },
+    {
+      "file": "public/assets/components/thumbs/engine.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 8242
+    },
+    {
+      "file": "public/assets/components/thumbs/exterior-lights.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 7172
+    },
+    {
+      "file": "public/assets/components/thumbs/fuel-system.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 5172
+    },
+    {
+      "file": "public/assets/components/thumbs/high-voltage-traction-battery.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 3780
+    },
+    {
+      "file": "public/assets/components/thumbs/low-voltage-battery.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 3866
+    },
+    {
+      "file": "public/assets/components/thumbs/oil-filter.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 3952
+    },
+    {
+      "file": "public/assets/components/thumbs/radiator.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 6224
+    },
+    {
+      "file": "public/assets/components/thumbs/spark-plugs.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 4580
+    },
+    {
+      "file": "public/assets/components/thumbs/steering-system.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 3028
+    },
+    {
+      "file": "public/assets/components/thumbs/suspension.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 4158
+    },
+    {
+      "file": "public/assets/components/thumbs/timing-belt.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 8572
+    },
+    {
+      "file": "public/assets/components/thumbs/transmission.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 5220
+    },
+    {
+      "file": "public/assets/components/thumbs/washer-reservoir.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 2006
+    },
+    {
+      "file": "public/assets/components/thumbs/wheels-and-tires.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 6450
+    },
+    {
+      "file": "public/assets/components/thumbs/wiper-blades.webp",
+      "width": 192,
+      "height": 192,
+      "bytes": 3092
+    },
+    {
+      "file": "public/assets/studio/silver-sedan-cutaway.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 199584
+    },
+    {
+      "file": "public/assets/studio/silver-sedan-hero-cutout.webp",
+      "width": 1600,
+      "height": 742,
+      "bytes": 171156
+    },
+    {
+      "file": "public/assets/studio/silver-cutaway-battery-electrical.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 171778
+    },
+    {
+      "file": "public/assets/studio/silver-cutaway-engine-oil.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 185774
+    },
+    {
+      "file": "public/assets/studio/silver-cutaway-tires-brakes.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 185006
+    }
+  ],
+  "limits": "Decoding and dimensions only; visual matching reviewed separately."
+}

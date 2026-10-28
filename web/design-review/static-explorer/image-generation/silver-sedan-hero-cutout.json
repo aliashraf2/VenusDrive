@@ -1,0 +1,12 @@
+{
+  "source": "/Users/aliashraf/.codex/generated_images/01a17ff3-144b-7e52-a737-6d7dd66d3986/exec-b0921972-ac60-466e-b377-4cb05e6d43cf.png",
+  "prompt": "Edit the supplied existing VenusDrive silver sedan studio image into a clean hero cutout asset. Preserve the same whole unbranded silver four-door sedan, its design, proportions, front three-quarter viewing angle facing left, realistic materials, wheels, mirrors, headlights and glass. Remove the entire photographic studio background and floor/reflection, leaving true transparent alpha around the car. Keep a very subtle soft contact shadow under the tires if possible with transparency. Tightly frame the entire vehicle with approximately 3\u20134 percent clear margin around its silhouette; remove excess blank space above and below. Full front bumper, rear bumper, roof, both visible wheels, and mirrors must remain visible. Landscape composition suitable for the right 60 percent of a two-column laptop hero. No text, no logos, no interface. Do not add another vehicle or change the paint color.",
+  "tool": "built-in image_gen edit",
+  "reference": "public/assets/studio/silver-quarter.jpg",
+  "dimensions": [
+    1600,
+    742
+  ],
+  "transparent": true,
+  "paddingTrimOnly": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "silver-cutaway-engine-oil",
+  "source": "/Users/aliashraf/.codex/generated_images/01a17ff3-144b-7e52-a737-6d7dd66d3986/exec-7726efab-a885-4ef9-bbd7-2f4f68db1c07.png",
+  "prompts": [
+    "Use case: scientific-educational. Create a new clean high-resolution static automotive cutaway illustration for a premium beginner car-care website, using the supplied silver sedan only as an exterior-design and viewing-angle reference. Show the entire unbranded silver sedan in the same front three-quarter view facing left. Full front and rear bumpers, roof, mirrors and all visible wheels must fit with 5 percent margin, on pure white background with a soft studio contact shadow. Use a restrained selective cutaway: keep roof, glass, rear body and much of the door/body surfaces intact, remove the hood surface and a small near-side front fender area to expose a coherent combustion engine and adjacent low-voltage battery, with a readable front disc brake and suspension at the front wheel. Avoid the clutter of exposed structural beams, excessive pipes, disembodied parts, or an implausible fuel tank in the cabin. Realistic silver, dark rubber, aluminum materials; clear simplified technical illustration, smooth studio lighting, polished but believable. Selected system is ENGINE AND OIL: highlight only the physical engine block and visible engine-oil filter in restrained electric blue, preserving material detail. The battery, tires, brake assembly, body, glass and all unrelated parts remain neutral natural colors. No labels, text, arrows, icons, UI, borders, infographic collage or watermarks. Landscape 3:2 framing, desired high resolution 2400 by 1600. This is a representative educational car, not a specific make/model or a repair diagram.",
+    "Make a precise small edit to this static silver-sedan cutaway. Preserve the vehicle design, viewing angle, blue engine/oil-filter highlighting, mechanical arrangement, neutral other parts, white background and studio lighting. Give the entire vehicle comfortable white margins: zoom the composition out slightly so the front and rear bumpers, all wheels, roof and mirrors have about 5 percent clear space from the image edges. Remove every printed letter/logo/mark from the blue oil filter so it is plain unbranded blue metal. Do not add any labels, text, arrows or UI. Preserve all visible parts and framing consistency. Keep a high-resolution landscape 3:2 image."
+  ],
+  "reference": "public/assets/studio/silver-sedan-hero-cutout.webp",
+  "tool": "built-in image_gen",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "target": "public/assets/studio/silver-cutaway-engine-oil.webp",
+  "bytes": 185774
+}

@@ -1,27 +1,16 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {TOUR_PARTS,TOUR_VIEWS,cycleView,selectionForView,tourMarkup} from '../public/studio-tour.js';
+import {TOUR_VIEWS,tourMarkup} from '../public/studio-tour.js';
 import {PREVIEW_TABS,previewData,previewSnapshot} from '../public/interactions.js';
 
-test('studio tour is honest about fixed illustrative views and offers accessible controls',()=>{
+test('showroom uses named static views and matching component links',()=>{
   const html=tourMarkup('test-tour');
-  assert.match(html,/3 fixed views, not live 3D/);
-  assert.match(html,/role="group" aria-label="Explore a car component"/);
-  assert.match(html,/aria-label="Silver car image tour/);
-  assert.match(html,/data-tour-reset/);
-  assert.match(html,/data-tour-next/);
+  assert.match(html,/Static car views/);
+  assert.match(html,/Representative car · static images/);
+  assert.doesNotMatch(html,/360|rotate|orbit|drag|data-tour-next/i);
+  for(const id of ['engine','tires','battery'])assert.ok(html.includes('href="#explorer/'+id+'"'));
   for(const view of TOUR_VIEWS)assert.ok(fs.existsSync(new URL('../public'+view.src,import.meta.url)),view.src);
-});
-
-test('component highlights remain attached to defined photo regions and clear when absent',()=>{
-  for(const part of Object.keys(TOUR_PARTS))assert.ok(TOUR_VIEWS.some(v=>v.anchors[part]),part);
-  assert.equal(selectionForView('engine',0),'engine');
-  assert.equal(selectionForView('brakes',0),null);
-  assert.equal(selectionForView('brakes',1),'brakes');
-  assert.equal(selectionForView('unknown',1),null);
-  assert.equal(cycleView(2,1),0);
-  assert.equal(cycleView(0,-1),2);
 });
 
 test('demo preview switches features and computes each vehicle from its own records',()=>{
