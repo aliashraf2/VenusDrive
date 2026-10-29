@@ -27,7 +27,7 @@ test('clicking anywhere on each learning tab synchronizes selection, cutaway, ic
       assert.equal(tab.getAttribute('aria-selected'),'true');assert.equal(tab.getAttribute('tabindex'),'0');
       assert.equal(f.root.querySelector('#system-image').src,system.src);
       if(system.id!=='engine')assert.equal(f.root.querySelector('#system-image').alt,system.alt);
-      assert.equal(f.root.querySelector('.learning-explore').getAttribute('href'),'#explorer?category='+system.categoryId);
+      assert.equal(f.root.querySelector('.learning-explore').getAttribute('href'),'#parts?category='+system.categoryId);
       assert.equal(f.root.querySelector('#learning-cutaway').getAttribute('aria-labelledby'),tab.getAttribute('id'));
       assert.equal(f.root.querySelector('#learning-system-status').textContent,system.name+' highlighted.');
     }

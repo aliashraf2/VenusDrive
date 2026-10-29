@@ -1,6 +1,6 @@
 # VenusDrive website
 
-Current delivery and verification limits are in [`STATIC-EXPLORER-DELIVERY.md`](STATIC-EXPLORER-DELIVERY.md). Account connection steps are in `ACCOUNT-CONNECTION.md`. Older redesign/model records are historical.
+The latest combined card/visual page and verification limits are in [`PARTS-VISUAL-EXPLORER-DELIVERY.md`](PARTS-VISUAL-EXPLORER-DELIVERY.md). The existing detail explorer is documented in [`STATIC-EXPLORER-DELIVERY.md`](STATIC-EXPLORER-DELIVERY.md). Account connection steps are in `ACCOUNT-CONNECTION.md`. Older redesign/model records are historical.
 
 The current visual system is a bright showroom landing page and static image-based learning interface, built on the existing light theme. The hero uses a compact 40/60 split with left-aligned text and a full-vehicle silver sedan image; mobile stacks text, buttons and car. The learning section uses selectable icon tabs and three matching static cutaways, with a blue button leading to the selected category. The actual public site remains in `public/`; `design-review/VenusDrive-offline-review.html` is an optional self-contained review aid with separate review-only storage and no cloud connection.
 

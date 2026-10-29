@@ -2,11 +2,11 @@
 // when this executor cannot bind a preview socket. Production stays buildless.
 import fs from 'node:fs/promises';import path from 'node:path';import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),pub=path.join(root,'public');
-const modules=["core.js","config.js","persistence.js","component-data.js","content.js","catalog.js","vehicle-art.js","component-detail.js","explorer-selection.js","explorer.js","studio-tour.js","learning-systems.js","interactions.js","landing.js","info-pages.js","mobile-nav.js","reminder-preferences.js","app.js"];
+const modules=["core.js","config.js","persistence.js","component-data.js","content.js","parts-visual-data.js","parts-library.js","catalog.js","vehicle-art.js","component-detail.js","explorer-selection.js","explorer.js","studio-tour.js","learning-systems.js","interactions.js","landing.js","info-pages.js","mobile-nav.js","reminder-preferences.js","app.js"];
 const logo=await fs.readFile(path.join(pub,'assets/vd.svg'));
 const logoURL='data:image/svg+xml;base64,'+logo.toString('base64');
 const media={};
-for(const folder of ['assets/studio','assets/components','assets/components/thumbs'])for(const name of await fs.readdir(path.join(pub,folder))){if(!/\.(jpg|webp)$/.test(name))continue;const url='/'+folder+'/'+name;media[url]='data:image/'+(name.endsWith('.webp')?'webp':'jpeg')+';base64,'+(await fs.readFile(path.join(pub,folder,name))).toString('base64');}
+for(const folder of ['assets/studio','assets/components','assets/components/thumbs','assets/parts-visuals'])for(const name of await fs.readdir(path.join(pub,folder))){if(!/\.(jpg|webp)$/.test(name))continue;const url='/'+folder+'/'+name;media[url]='data:image/'+(name.endsWith('.webp')?'webp':'jpeg')+';base64,'+(await fs.readFile(path.join(pub,folder,name))).toString('base64');}
 
 let bundle='const M = Object.create(null);\nconst reviewMedia='+JSON.stringify(media)+';\nconst reviewAsset=url=>reviewMedia[url]||url;\n';
 for(const name of modules){let source=await fs.readFile(path.join(pub,name),'utf8');const exports=[...source.matchAll(/export\s+(?:async\s+)?(?:function|class|const|let)\s+(\w+)/g)].map(m=>m[1]);
@@ -29,6 +29,7 @@ let html=await fs.readFile(path.join(pub,'index.html'),'utf8');
 html=html.replace('<link rel="stylesheet" href="/style.css">','<style>'+css+'</style>').replace('<script type="module" src="/app.js"></script>','').replaceAll('/assets/vd.svg',logoURL).replace('/assets/favicon.svg',logoURL);
 html=html.replace('<script src="/runtime-config.js"></script>','').replace('<link rel="stylesheet" href="/light-theme.css">','<style>'+(await fs.readFile(path.join(pub,'light-theme.css'),'utf8'))+'</style>');
 html=html.replace('<link rel="stylesheet" href="/static-explorer.css">','<style>'+(await fs.readFile(path.join(pub,'static-explorer.css'),'utf8'))+'</style>');
+for(const name of ['ui-refinements.css','parts-library.css'])html=html.replace('<link rel="stylesheet" href="/'+name+'">','<style>'+(await fs.readFile(path.join(pub,name),'utf8'))+'</style>');
 html=html.replace('</body>',`<script id="offline-catalog" type="application/json">${data.replaceAll('<','\\u003c')}</script><script>${bundle.replaceAll('</script','<\\/script')}</script></body>`);
 const target=path.join(root,'design-review');await fs.mkdir(target,{recursive:true});await fs.writeFile(path.join(target,'VenusDrive-offline-review.html'),html);await fs.writeFile(path.join(target,'review-bundle.js'),bundle);
 console.log('Review only: '+path.join(target,'VenusDrive-offline-review.html'));
